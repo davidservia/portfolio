@@ -18,25 +18,28 @@
         <div class="row">
             <!--row para usar grid -->
             <div class="col-sm-10 col-md-8 col-lg-6 mx-auto border border-primary">
-                <h2 class="text-center my-4">Calculo circulares a partir de un radio</h2>
-                <h4 class="text-center mb-2">Introduce un valor numerico de radio:</h4>
+                <h2 class="text-center my-4">Tipos de Triángulos</h2>
+                <h4 class="text-center mb-2">Introduce los lados:</h4>
+
                 <div class="mb-3">
-                    <label for="radio" class="form-label">Radio: </label>
-                    <input type="email" class="form-control" id="radio" placeholder="número positivo">
+                    <input type="text" class="form-control" id="lado1" placeholder="lado1">
+                </div>
+
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="lado2" placeholder="lado2">
+                </div>
+
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="lado3" placeholder="lado3">
                 </div>
 
                 <!--<input type="text" id="radio" placeholder="radio"> -->
-                <button onclick="calcular()" class="btn btn-primary mb-3">Calcular!</button>
-                <ul>
-                    <li id="circunferencia"></li>
-                    <li id="perimetro"></li>
-                    <li id="circulo"></li>
-                    <li id="esfera"></li>
-                </ul>
+                <button onclick="comparar()" class="btn btn-primary mb-3">Comparar!</button>
+                <p id="respuestaTipo"></p>
             </div>
         </div>
     </div>
-    <script src="ejercicio2.js"></script>
+    <script src="ejercicio3.js"></script>
 </body>
 
 </html>
